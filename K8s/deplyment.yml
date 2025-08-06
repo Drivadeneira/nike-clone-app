@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nike
-        image: drivadeneira/nike-static:latest  # Update with your Docker Hub image
+        image: sha256:f4b18d6388a787688ece48e44daa80927fcb743e28fda2b9faa2f7538fd44cef # Update with your Docker Hub image
         ports:
         - containerPort: 8087
