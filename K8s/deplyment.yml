@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nike-app
+  labels:
+    app: nike
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nike
+  template:
+    metadata:
+      labels:
+        app: nike
+    spec:
+      containers:
+      - name: nike
+        image: drivadeneira/nike-static:latest  # Update with your Docker Hub image
+        ports:
+        - containerPort: 8087
